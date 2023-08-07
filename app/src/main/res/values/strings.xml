@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">MatchMatch</string>
+    <string name="login_emailhint_et">이메일 주소</string>
+    <string name="login_passwordhint_et">비밀번호</string>
+    <string name="login_loginbtntext_btn">로그인</string>
+    <string name="login_autologin_checkbox">자동 로그인</string>
+    <string name="login_searchid_tv">아이디 찾기</string>
+    <string name="login_searchpassword_tv">비밀번호 찾기</string>
+    <string name="login_textdivider">|</string>
+    <string name="login_signin_tv">회원가입</string>
+    <string name="login_kakao_btn">카카오톡으로 로그인</string>
+    <string name="login_naver_btn">네이버로 로그인</string>
+    <string name="login_host_btn">호스트로 로그인</string>
+</resources>
