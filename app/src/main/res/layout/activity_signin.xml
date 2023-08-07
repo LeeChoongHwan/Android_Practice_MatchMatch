@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SigninActivity">
+
+    <ImageView
+        android:id="@+id/iv_signin_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/ic_signin_backbtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_signin_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/ic_login_home"
+        app:layout_constraintStart_toEndOf="@+id/iv_signin_back"
+        app:layout_constraintTop_toTopOf="@+id/iv_signin_back" />
+
+    <ImageView
+        android:id="@+id/iv_signin_main_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/main_image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <TextView
+        android:id="@+id/signin_simple_singin_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="매치매치 간편가입"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_signin_main_image"
+        android:textColor="@color/darkGreen"
+        android:layout_marginTop="20dp"/>
+
+    <android.widget.Button
+        android:id="@+id/btn_signin_kakao_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_login_kakao_btn"
+        app:layout_constraintTop_toBottomOf="@id/signin_simple_singin_tv"
+        android:text="카카오톡으로 가입하기"
+        android:textColor="@color/black"/>
+
+    <android.widget.Button
+        android:id="@+id/btn_signin_naver_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_login_naver_btn"
+        app:layout_constraintTop_toBottomOf="@id/btn_signin_kakao_btn"
+        android:text="네이버로 가입하기"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/signin_already_signin_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이미 회원이신가요?"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btn_signin_login"
+        android:textColor="@color/black"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/btn_signin_login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/darkGreen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="로그인"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="15sp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
