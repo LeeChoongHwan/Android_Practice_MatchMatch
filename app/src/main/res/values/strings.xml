@@ -11,4 +11,17 @@
     <string name="login_kakao_btn">카카오톡으로 로그인</string>
     <string name="login_naver_btn">네이버로 로그인</string>
     <string name="login_host_btn">호스트로 로그인</string>
+    <string name="signindetail_emailhint">이메일 주소</string>
+    <string name="signindetail_repetation_btn">중복확인</string>
+    <string name="signindetail_passwordhint">비밀번호</string>
+    <string name="signindetail_passwordcheckhint">비밀번호 확인</string>
+    <string name="signindetail_namehint">이름</string>
+    <string name="signindetail_nicknamehint">닉네임</string>
+    <string name="signin_detail_nickname_repetation">중복확인</string>
+    <string name="signin_detail_phone">전화번호</string>
+    <string name="signin_detail_phone_button">인증</string>
+    <string name="signin_detail_checknum">인증번호</string>
+    <string name="signin_detail_checknum_btn">확인</string>
+    <string name="signin_detail_certificate_checkbox">약관에 동의하기</string>
+    <string name="signin_detail_signin_button">가입하기</string>
 </resources>

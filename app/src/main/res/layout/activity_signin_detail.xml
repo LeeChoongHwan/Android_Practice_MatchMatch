@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SigninDetailActivity">
+
+    <ImageView
+        android:id="@+id/iv_signin_detail_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/ic_signin_backbtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_signin_detail_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/ic_login_home"
+        app:layout_constraintStart_toEndOf="@+id/iv_signin_detail_back"
+        app:layout_constraintTop_toTopOf="@+id/iv_signin_detail_back" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vertical_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.7"/>
+
+    <EditText
+        android:id="@+id/et_signin_detail_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/iv_signin_detail_back"
+        android:layout_marginTop="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/vertical_guideline"
+        android:background="@drawable/shape_half_left_et"
+        android:layout_marginStart="30dp"
+        android:hint="@string/signindetail_emailhint"
+        android:textSize="15sp"
+        android:padding="8dp"
+        android:inputType="textEmailAddress"/>
+
+    <android.widget.Button
+        android:id="@+id/et_signin_detail_id_button"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        app:layout_constraintStart_toEndOf="@id/et_signin_detail_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/shape_half_right_btn"
+        app:layout_constraintTop_toTopOf="@+id/et_signin_detail_id"
+        android:layout_marginEnd="30dp"
+        android:text="@string/signindetail_repetation_btn"
+        android:textColor="@color/darkGreen"/>
+
+    <EditText
+        android:id="@+id/et_login_detail_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_login_et"
+        android:hint="@string/signindetail_passwordhint"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@+id/et_signin_detail_id" />
+
+    <EditText
+        android:id="@+id/et_login_detail_passwordcheck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_login_et"
+        android:hint="@string/signindetail_passwordcheckhint"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@+id/et_login_detail_password" />
+
+    <EditText
+        android:id="@+id/et_login_detail_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_login_et"
+        android:hint="@string/signindetail_namehint"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@+id/et_login_detail_passwordcheck" />
+
+    <EditText
+        android:id="@+id/et_signin_detail_nickname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/et_login_detail_name"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/vertical_guideline"
+        android:background="@drawable/shape_half_left_et"
+        android:layout_marginStart="30dp"
+        android:hint="@string/signindetail_nicknamehint"
+        android:textSize="15sp"
+        android:padding="8dp"
+        android:inputType="textEmailAddress"/>
+
+    <android.widget.Button
+        android:id="@+id/et_signin_detail_id_nickname"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        app:layout_constraintStart_toEndOf="@id/et_signin_detail_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/shape_half_right_btn"
+        app:layout_constraintTop_toTopOf="@+id/et_signin_detail_nickname"
+        android:layout_marginEnd="30dp"
+        android:text="@string/signin_detail_nickname_repetation"
+        android:textColor="@color/darkGreen"/>
+
+    <EditText
+        android:id="@+id/et_signin_detail_phone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/et_signin_detail_id_nickname"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/vertical_guideline"
+        android:background="@drawable/shape_half_left_et"
+        android:layout_marginStart="30dp"
+        android:hint="@string/signin_detail_phone"
+        android:textSize="15sp"
+        android:padding="8dp"
+        android:inputType="phone"/>
+
+    <android.widget.Button
+        android:id="@+id/et_signin_detail_id_phone"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        app:layout_constraintStart_toEndOf="@id/et_signin_detail_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/shape_half_right_filled_btn"
+        app:layout_constraintTop_toTopOf="@+id/et_signin_detail_phone"
+        android:layout_marginEnd="30dp"
+        android:text="@string/signin_detail_phone_button"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/et_signin_detail_certificate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/et_signin_detail_id_phone"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/vertical_guideline"
+        android:background="@drawable/shape_half_left_et"
+        android:layout_marginStart="30dp"
+        android:hint="@string/signin_detail_checknum"
+        android:textSize="15sp"
+        android:padding="8dp"
+        android:inputType="phone"/>
+
+    <android.widget.Button
+        android:id="@+id/et_signin_detail_id_certificate"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        app:layout_constraintStart_toEndOf="@id/et_signin_detail_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/shape_half_right_filled_btn"
+        app:layout_constraintTop_toTopOf="@+id/et_signin_detail_certificate"
+        android:layout_marginEnd="30dp"
+        android:text="@string/signin_detail_checknum_btn"
+        android:textColor="@color/white"/>
+
+    <CheckBox
+        android:id="@+id/checkbox_signin_detail_certificate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/signin_detail_certificate_checkbox"
+        app:layout_constraintLeft_toLeftOf="@+id/et_signin_detail_phone"
+        app:layout_constraintTop_toBottomOf="@+id/et_signin_detail_id_certificate"
+        android:layout_marginTop="20dp"
+
+    <TextView
+        android:id="@+id/btn_signindetail_login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/darkGreen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/signin_detail_signin_button"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="15sp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
